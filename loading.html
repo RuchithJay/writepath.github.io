@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/icons/cogwheel2.svg" type="image/svg+xml">
+    <title> Under Development</title>
+    <style>
+        :root {
+            --primary-color: #a18cd1;         /* Soft purple */
+            --secondary-color: #5f2c82;       /* Deep purple */
+            --accent-color: #fbc2eb;          /* Pink accent */
+            --light-color: #f8f0fc;           /* Very light purple */
+            --dark-color: #3d246c;            /* Dark purple */
+            --text-color: #4a326e;            /* Muted purple for text */
+            --text-light: #a18cd1;            /* Lighter purple for secondary text */
+            --white: #fff;
+            --box-shadow: 0 5px 15px rgba(161, 140, 209, 0.12);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--light-color) 0%, var(--accent-color) 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+        }
+        
+        .cogwheel {
+            font-size: 80px;
+            margin-bottom: 30px;
+            animation: rotate 3s linear infinite;
+            color: var(--secondary-color);
+        }
+        
+        .text {
+            font-size: 24px;
+            color: var(--text-light);
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 0.7rem 1.5rem;
+            background: var(--light-color);
+            color: var(--text-color);
+            border-radius: 24px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 2px 8px var(--box-shadow);
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+
+        .back-link:hover {
+            background: var(--secondary-color);
+            color: var(--white);
+            transform: translateY(-2px) scale(1.04);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cogwheel">
+        <img src="/icons/cogwheel2.svg" alt="Cogwheel" style="width: 80px; height: 80px;">
+    </div>
+    <div class="text" style="color: #3d246c;">Project under development...</div>
+    <a href="index.html" class="back-link">← Back to main page</a> 
+    <script>
+        // JavaScript can be used for additional functionality if needed
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Loading page ready');
+        });
+    </script>
+</body>
+</html>
