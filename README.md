@@ -1,2 +1,2 @@
 # writepath.github.io 
-### Main landing page for project WritPath 🌐
+### Main landing page for project WritePath 🌐
